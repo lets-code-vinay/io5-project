@@ -1,13 +1,14 @@
+import React from "react";
 import "./App.css";
-
-import Login from "./component/Login/index";
+import Header from "./Component/MainHeader";
+import SubHeader from "./Component/SubHeader";
 
 function App() {
   return (
-    <>
-
-      <Login />
-    </>
+    <React.Fragment>
+      <Header />
+      <SubHeader />
+    </React.Fragment>
   );
 }
 
