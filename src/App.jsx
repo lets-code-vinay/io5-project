@@ -6,10 +6,14 @@ import About from "./Pages/About/About.jsx";
 import Contact from "./Pages/Contact/Contact.jsx";
 import AllProducts from "./Pages/AllProducts/AllProducts.jsx";
 import SignUp from "./Pages/SignUp/SignUp.jsx";
+import Header from "./Component/MainHeader";
+import SubHeader from "./Component/SubHeader";
 
 function App() {
   return (
     <div className="main-page">
+      <Header />
+      <SubHeader />
       <BrowserRouter>
         <Routes>
           <Route path="/Signup" element={<SignUp />} />
