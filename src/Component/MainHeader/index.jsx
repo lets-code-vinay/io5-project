@@ -61,7 +61,7 @@ function Header() {
             type="text"
             placeholder="Fina amazon.in"
           />
-          <span style={{ width: "16%" }}>
+          <span style={{ width: "10%" }}>
             <IoSearch className="search-icon" />
           </span>
         </div>
@@ -70,8 +70,8 @@ function Header() {
             {state.map((data, index) => {
               return (
                 <option>
-                  {data?.flags.svg}
-                  {data?.name.common}
+                  <img src={data?.flags.svg} alt="country" />
+                  <p>{data?.name.common}</p>
                 </option>
               );
             })}
@@ -80,7 +80,7 @@ function Header() {
         </div>
         <p className="sign">
           Hello Sign in{" "}
-          <strong style={{ fontSize: "18px" }}>Account & List</strong>
+          <strong style={{ fontSize: "15px" }}>Account & List</strong>
         </p>
         <p className="return">
           Returns <strong> & Order</strong>
