@@ -5,6 +5,7 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiShoppingCart } from "react-icons/hi";
 import { IoSearch } from "react-icons/io5";
 import axios from "axios";
+
 function Header() {
   const [state, setState] = useState([]);
   useEffect(() => {
