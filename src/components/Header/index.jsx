@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
-import image from "../../Assest/Icons/ama.png";
+import image from "../../assets/icons/ama.png";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiShoppingCart } from "react-icons/hi";
 import { IoSearch } from "react-icons/io5";
 import axios from "axios";
+
 function Header() {
   const [state, setState] = useState([]);
   useEffect(() => {
@@ -61,7 +62,7 @@ function Header() {
             type="text"
             placeholder="Fina amazon.in"
           />
-          <span style={{ width: "16%" }}>
+          <span style={{ width: "10%" }}>
             <IoSearch className="search-icon" />
           </span>
         </div>
@@ -70,8 +71,8 @@ function Header() {
             {state.map((data, index) => {
               return (
                 <option>
-                  {data?.flags.svg}
-                  {data?.name.common}
+                  <img src={data?.flags.svg} alt="country" />
+                  <p>{data?.name.common}</p>
                 </option>
               );
             })}
@@ -80,7 +81,7 @@ function Header() {
         </div>
         <p className="sign">
           Hello Sign in{" "}
-          <strong style={{ fontSize: "18px" }}>Account & List</strong>
+          <strong style={{ fontSize: "15px" }}>Account & List</strong>
         </p>
         <p className="return">
           Returns <strong> & Order</strong>

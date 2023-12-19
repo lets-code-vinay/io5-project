@@ -1,0 +1,123 @@
+.d.flex{
+  margin-left: 34%;
+}
+.logo {
+  display: inline;
+  height: 15vh;
+  width: 13%;
+  position: relative;
+  z-index: -1;
+  padding: -17px;
+ margin-left: 41%;
+}
+.logo-child {
+  position: absolute;
+  left: 52.3%;
+  top: 6%;
+  font-size: 15px;
+  font-weight: 600;
+}
+.main-container {
+  border: 1px solid;
+  margin: auto;
+  text-align: center;
+  width: 25%;
+  margin-top: -1%;
+  height: 68vh;
+  border-radius: 10px;
+}
+.head,
+#mob-label,
+#pass-label {
+  padding-left: 34px;
+  display: flex;
+  color: #111111;
+}
+#mob-label {
+  margin: 2%;
+}
+.input-email,
+.input-password,
+.sign-btn {
+  width: 86%;
+
+  display: flex;
+  color: #111111;
+  margin-left: 7%;
+}
+.sign-btn
+{
+  background-color: #ffd814;
+  text-align: center;
+  margin: auto;
+  padding-left: 34%;
+  color: #111111;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+.create-btn {
+  background-color: #ffffff !important;
+  text-align: center;
+  width: 86%;
+  display: flex;
+  color: #111111 !important;
+  margin-left: 7%;
+  margin: auto;
+  padding-left: 21%;
+  color: #111111;
+  border-radius: 5px;
+  border: 1px solid;
+
+}
+.pass-parent {
+  display: flex;
+  justify-content: space-between;
+}
+.box-set {
+  padding-left: 13%;
+  margin-top: 19px;
+  display: flex;
+  padding-top: -37px;
+  /* margin-bottom: 21%; */
+  position: relative;
+  bottom: 45px;
+}
+.box1 label {
+  padding-left: 5px;
+  padding-right: 54%;
+}
+.input-email,.input-password{
+  width: 84% !important;
+}
+.dropdown {
+  position: relative;
+  margin-top: -59px;
+  left: 6px;
+}
+#cross-icon {
+  position: relative;
+  left: 64%;
+}
+.conditions {
+  color: #31a3e1;
+}
+.conditions:hover {
+  text-decoration: underline;
+  color: brown;
+}
+.text {
+  padding: 5%;
+}
+.para {
+  position: relative;
+  margin-top: -7%;
+}
+.hr1 {
+  width: 35%;
+}
+.hr2 {
+  width: 36%;
+  float: inline-end;
+  margin-top: -6%;
+}

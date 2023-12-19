@@ -34,27 +34,26 @@
 }
 .search-inp {
   padding: 1%;
-  border: 4px solid orange;
+
   margin: 0.8% 0 0.35% 0%;
-  height: 3.2vh;
+  height: 3.7vh;
   width: 71%;
 }
 .inp1 {
   border-radius: 11px 0 0 11px;
-  border: 4px solid orange;
   margin: 0.8% 0 0.35% 8%;
   height: 6.3vh;
-  width: 15%;
+  width: 8%;
+  background: #d6d6c8;
 }
 .search-icon {
-  border-radius: 0 9px 9px 0;
-  padding: 0.9%;
-  margin: 6% 0 0.8% 0;
-  height: 4.9vh;
-  border: 4px solid orange;
-  color: black;
-  width: 77%;
-  background: white;
+  border-radius: 0 11px 11px 0;
+  padding: 7%;
+  margin: 7.3% 0 0.8% 0;
+  height: 4.8vh;
+  color: white;
+  width: 70%;
+  background: orange;
 }
 h3 {
   margin: 0.5% 0 0 1.2%;
@@ -107,23 +106,22 @@ h4 {
 }
 .return {
   line-height: 19px;
-  font-size: 18px;
-  margin-right: 1%;
+  font-size: 16px;
+  margin-right: 0.8%;
   margin-bottom: 0;
-  height: 7vh;
   color: white;
-  margin-top: 0.9%;
+  margin-top: 0.7%;
 }
 .return:hover {
   border: 1px solid white;
 }
 .sign {
-  margin-right: 1%;
-  line-height: 18px;
-  font-size: 14px;
+  margin-right: 0.8%;
+  line-height: 17px;
+  font-size: 13px;
   color: white;
   margin-bottom: 0;
-  margin-top: 0.78%;
+  margin-top: 0.8%;
 }
 .sign:hover {
   border: 1px solid white;
