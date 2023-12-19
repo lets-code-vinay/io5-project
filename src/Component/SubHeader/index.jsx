@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import image from "../../Assest/Icons/ama.png";
+import image from "../../assets/icons/ama.png";
 
 function SubHeader() {
   return (

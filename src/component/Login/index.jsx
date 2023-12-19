@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import img from "../../Assets/icons/logo1.png";
+import img from "../../assets/icons/logo1.png";
 // import "bootstrap/dist/cscos/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
