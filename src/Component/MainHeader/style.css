@@ -1,0 +1,130 @@
+.nav-1 {
+  border: 1px solid black;
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  background-color: #131921;
+}
+.img-cont {
+  position: absolute;
+  height: 167px;
+  width: 14%;
+  top: -6.5%;
+  left: -3%;
+}
+.location-icon {
+  color: white;
+  margin: 0% -22px 0%;
+  width: 12.1%;
+  height: 10vh;
+}
+.text {
+  position: absolute;
+  font-size: 12px;
+  color: white;
+  margin: 0;
+  top: 1.7%;
+}
+.update-name {
+  margin-top: -31.5%;
+  color: white;
+  font-size: 15px;
+  width: 98%;
+  font-weight: bold;
+}
+.search-inp {
+  padding: 1%;
+  border: 4px solid orange;
+  margin: 0.8% 0 0.35% 0%;
+  height: 3.2vh;
+  width: 71%;
+}
+.inp1 {
+  border-radius: 11px 0 0 11px;
+  border: 4px solid orange;
+  margin: 0.8% 0 0.35% 8%;
+  height: 6.3vh;
+  width: 15%;
+}
+.search-icon {
+  border-radius: 0 9px 9px 0;
+  padding: 0.9%;
+  margin: 6% 0 0.8% 0;
+  height: 4.9vh;
+  border: 4px solid orange;
+  color: black;
+  width: 77%;
+  background: white;
+}
+h3 {
+  margin: 0.5% 0 0 1.2%;
+  font-size: 15px;
+  font-weight: normal;
+}
+h3:hover {
+  border: 1px solid white;
+}
+.cont {
+  width: 14%;
+  margin-left: 11%;
+}
+.cont:hover {
+  border: 1px solid white;
+}
+.country-list {
+  margin-left: 3.9%;
+  margin-top: 18.7%;
+  height: 2.5vh;
+  width: 15.6%;
+}
+.cont-name {
+  font-weight: bold;
+  color: orange;
+  margin-left: 3.5%;
+  margin-top: 18.2%;
+}
+.main-cont-list {
+  display: flex;
+  width: 11%;
+}
+
+.cart {
+  color: white;
+  width: 41%;
+  height: 9vh;
+}
+h4 {
+  font-size: 20px;
+  margin-top: 22%;
+}
+.cart-cont {
+  width: 9%;
+  display: flex;
+  color: white;
+}
+.cart-cont:hover {
+  border: 1px solid white;
+}
+.return {
+  line-height: 19px;
+  font-size: 18px;
+  margin-right: 1%;
+  margin-bottom: 0;
+  height: 7vh;
+  color: white;
+  margin-top: 0.9%;
+}
+.return:hover {
+  border: 1px solid white;
+}
+.sign {
+  margin-right: 1%;
+  line-height: 18px;
+  font-size: 14px;
+  color: white;
+  margin-bottom: 0;
+  margin-top: 0.78%;
+}
+.sign:hover {
+  border: 1px solid white;
+}
