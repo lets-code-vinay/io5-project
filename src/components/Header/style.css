@@ -6,17 +6,20 @@
   background-color: #131921;
 }
 .img-cont {
+  left: 1%;
   position: absolute;
-  height: 167px;
-  width: 14%;
-  top: -6.5%;
-  left: -3%;
+  height: 44px;
+  width: 7%;
+  top: 1.5%;
+}
+.img-cont:hover {
+  border: 1px solid white;
 }
 .location-icon {
   color: white;
-  margin: 0% -22px 0%;
-  width: 12.1%;
-  height: 10vh;
+  margin: 3% -22px 0%;
+  width: 13.1%;
+  height: 8vh;
 }
 .text {
   position: absolute;
@@ -26,7 +29,7 @@
   top: 1.7%;
 }
 .update-name {
-  margin-top: -31.5%;
+  margin-top: -23.5%;
   color: white;
   font-size: 15px;
   width: 98%;
@@ -34,38 +37,29 @@
 }
 .search-inp {
   padding: 1%;
-
   margin: 0.8% 0 0.35% 0%;
-  height: 3.7vh;
-  width: 71%;
+  height: 5.8vh;
+  width: 83%;
 }
 .inp1 {
   border-radius: 11px 0 0 11px;
   margin: 0.8% 0 0.35% 8%;
-  height: 6.3vh;
+  height: 5.8vh;
   width: 8%;
   background: #d6d6c8;
 }
 .search-icon {
   border-radius: 0 11px 11px 0;
   padding: 7%;
-  margin: 7.3% 0 0.8% 0;
-  height: 4.8vh;
+  margin: 7.9% 0 0.8% 0;
+  height: 5.8vh;
   color: white;
-  width: 70%;
+  width: 74%;
   background: orange;
-}
-h3 {
-  margin: 0.5% 0 0 1.2%;
-  font-size: 15px;
-  font-weight: normal;
-}
-h3:hover {
-  border: 1px solid white;
 }
 .cont {
   width: 14%;
-  margin-left: 11%;
+  margin-left: 10.5%;
 }
 .cont:hover {
   border: 1px solid white;
@@ -89,12 +83,13 @@ h3:hover {
 
 .cart {
   color: white;
-  width: 41%;
-  height: 9vh;
+  width: 38%;
+  height: 6vh;
+  margin-top: 10%;
 }
 h4 {
-  font-size: 20px;
-  margin-top: 22%;
+  font-size: 21px;
+  margin-top: 24%;
 }
 .cart-cont {
   width: 9%;
@@ -110,6 +105,7 @@ h4 {
   margin-right: 0.8%;
   margin-bottom: 0;
   color: white;
+  margin-left: 0;
   margin-top: 0.7%;
 }
 .return:hover {
@@ -120,6 +116,7 @@ h4 {
   line-height: 17px;
   font-size: 13px;
   color: white;
+  margin-left: 0;
   margin-bottom: 0;
   margin-top: 0.8%;
 }

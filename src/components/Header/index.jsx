@@ -88,7 +88,7 @@ function Header() {
         </p>
         <div className="cart-cont">
           <HiShoppingCart className="cart" />
-          <h4>Cart</h4>
+          <h4 style={{ fontSize: "21px", marginTop: "24%" }}>Cart</h4>
         </div>
       </div>
     </React.Fragment>

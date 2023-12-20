@@ -6,7 +6,7 @@ import About from "./Pages/About/About.jsx";
 import Contact from "./Pages/Contact/Contact.jsx";
 import AllProducts from "./Pages/AllProducts/AllProducts.jsx";
 import SignUp from "./Pages/SignUp/SignUp.jsx";
-
+import Sidebar from "./components/sidebar/index.jsx";
 import SubHeader from "./components/SubHeader";
 import Header from "./components/Header";
 
@@ -22,6 +22,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/all-products" element={<AllProducts />} />
+          <Route path="/Sidebar" element={<Sidebar />} />
         </Routes>
       </BrowserRouter>
     </div>

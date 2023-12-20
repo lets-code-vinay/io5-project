@@ -1,36 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
-import image from "../../assets/icons/ama.png";
-
+import { FaBars } from "react-icons/fa";
+import Button from "react-bootstrap/Button";
+import Sidebar from "../sidebar";
 function SubHeader() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => {
+    setShow(true);
+  };
   return (
     <React.Fragment>
-      <div
-        style={{
-          display: "flex",
-          background: "rgb(35,47,62)",
-          height: "5vh",
-          width: "100%",
-          color: "white",
-        }}
-      >
-        <h3>Amazon miniTV</h3>
-        <h3>Sell </h3>
-        <h3>Best Seller</h3>
-        <h3>Today's Deal</h3>
-        <h3>Mobile </h3>
-        <h3>Customer Service</h3>
-        <h3>Electronics</h3>
-        <h3>New Release</h3>
-        <h3>Prime</h3>
-        <h3>Home And Kitchen</h3>
-        <h3>Fashion</h3>
-        <h3>Gift Idea</h3>
-        <h3>Amazon Pay</h3>
-        <h3>Computer</h3>
-        <h3>Books</h3>
-        <h3>Car And Motorbike</h3>
+      <div className="sub-cont">
+        <button className="button" variant="primary">
+          <FaBars onClick={handleShow} className="icon" /> All
+        </button>
+        <ul className="list">
+          <li>Amazon miniTV</li>
+          <li>Sell </li>
+          <li>Best Seller</li>
+          <li>Today's Deal</li>
+          <li>Mobile </li>
+          <li>Customer Service</li>
+          <li>Electronics</li>
+          <li>New Release</li>
+          <li>Prime</li>
+          <li>Home And Kitchen</li>
+          <li>Fashion</li>
+          <li>Gift Idea</li>
+          <li>Amazon Pay</li>
+          <li>Computer</li>
+          <li>Books</li>
+          <li>Car And Motorbike</li>
+        </ul>
       </div>
+      <Sidebar
+        show={show}
+        setShow={setShow}
+        handleShow={handleShow}
+        handleClose={handleClose}
+      />
     </React.Fragment>
   );
 }
