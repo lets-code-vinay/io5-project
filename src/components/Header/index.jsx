@@ -14,7 +14,6 @@ function Header() {
   const fetchData = async () => {
     const api = `https://restcountries.com/v3.1/all`;
     const res = await axios.get(api);
-
     const { data } = res || [];
     console.log("data", data);
     setState(data);
