@@ -1,9 +1,8 @@
-import { useState } from "react";
-import Button from "react-bootstrap/Button";
+import React from "react";
 import Offcanvas from "react-bootstrap/Offcanvas";
 
 function SubSideBar(props) {
-  const { handleMenu, isMenu, handleMenuClose } = props;
+  const { isMenu, handleMenuClose } = props;
   return (
     <>
       <Offcanvas show={isMenu} onHide={handleMenuClose}>

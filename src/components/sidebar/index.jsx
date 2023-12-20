@@ -6,7 +6,7 @@ import { RxCaretRight } from "react-icons/rx";
 import { IoIosContact } from "react-icons/io";
 
 function Sidebar(props) {
-  const { handleShow, handleClose, show } = props;
+  const { handleClose, show } = props;
   const [isShowMore, setShowMore] = useState(false);
   const [isMenu, setMenu] = useState(false);
   const handleMenu = () => {
