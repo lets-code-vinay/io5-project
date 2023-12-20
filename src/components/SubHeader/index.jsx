@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "./style.css";
 import { FaBars } from "react-icons/fa";
 import img from "../../assets/icons/shopping icon.png";
-import Sidebar from "../sidebar";
+import Sidebar from "../Sidebar";
+
 function SubHeader() {
   const [show, setShow] = useState(false);
 
