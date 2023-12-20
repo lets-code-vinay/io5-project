@@ -46,7 +46,7 @@ function Header() {
         <img className="img-cont" src={image} alt="image" />
         <div className="cont">
           <HiOutlineLocationMarker className="location-icon " />
-          <p className="text">Delivered to Ludhiana 141203 </p>
+          <p className="text2">Delivered to Ludhiana 141203 </p>
           <p className="update-name">Update Location</p>
         </div>
         <div style={{ display: "flex", width: "67%" }}>
@@ -87,7 +87,7 @@ function Header() {
         </p>
         <div className="cart-cont">
           <HiShoppingCart className="cart" />
-          <h4>Cart</h4>
+          <h4 style={{ fontSize: "21px", marginTop: "24%" }}>Cart</h4>
         </div>
       </div>
     </React.Fragment>
