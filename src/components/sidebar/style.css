@@ -166,6 +166,11 @@ html {
   color: #fff;
   text-decoration: none;
 }
+.contact {
+  margin-left: 2%;
+  height: 7vh;
+  width: 23%;
+}
 .dropdown-header {
   text-align: center;
   font-size: 1em;
@@ -185,6 +190,41 @@ html {
 }
 .dropdown-menu.show {
   top: 0;
+}
+.title {
+  height: 6vh;
+  background: #232f3e;
+  color: white;
+  font-size: 30px;
+}
+.list-container {
+  padding: 0;
+  list-style: none;
+  font-weight: 600;
+  color: rgb(55, 55, 55);
+  line-height: 295%;
+}
+.icons {
+  font-size: 33px;
+  height: 3vh;
+  margin-top: 4%;
+  float: right;
+}
+.title-name {
+  font-size: 16px;
+}
+.containers {
+  padding: 5% 7% 0 7%;
+  height: 100vh;
+  overflow: auto;
+}
+.Button {
+  font-weight: bold;
+  background: white;
+  border: none;
+  color: rgb(55, 55, 55);
+  width: 100%;
+  margin-bottom: 5%;
 }
 /*Fontawesome icons*/
 .nav.sidebar-nav li a::before {

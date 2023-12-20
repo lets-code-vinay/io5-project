@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import { FaBars } from "react-icons/fa";
-import Button from "react-bootstrap/Button";
+import img from "../../assets/icons/shopping icon.png";
 import Sidebar from "../sidebar";
 function SubHeader() {
   const [show, setShow] = useState(false);
@@ -29,10 +29,9 @@ function SubHeader() {
           <li>Home And Kitchen</li>
           <li>Fashion</li>
           <li>Gift Idea</li>
-          <li>Amazon Pay</li>
-          <li>Computer</li>
-          <li>Books</li>
-          <li>Car And Motorbike</li>
+
+          <img style={{ marginLeft: "2%" }} src={img} alt="image" />
+          <li>Shopping made easy download the app</li>
         </ul>
       </div>
       <Sidebar
