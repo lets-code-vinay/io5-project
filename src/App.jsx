@@ -1,17 +1,32 @@
 import React from "react";
 import "./App.css";
-import Header from "./component/Header";
-import SubHeader from "./component/SubHeader";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./Pages/HomePage/HomePage.jsx";
+import About from "./Pages/About/About.jsx";
+import Contact from "./Pages/Contact/Contact.jsx";
+import AllProducts from "./Pages/AllProducts/AllProducts.jsx";
 
-
+import Login from "../src/components/Login/index.jsx";
+import SignUp from "./Pages/SignUp/index.jsx";
+import CartPage from "./Pages/CartPage/index.jsx";
 
 function App() {
   return (
-    <React.Fragment>
-<Header/>
-<SubHeader/>
+    <div className="main-page">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/cart" element={<CartPage />} />
 
-    </React.Fragment>
+          <Route path="/home-page" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/all-products" element={<AllProducts />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

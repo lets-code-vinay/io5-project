@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
-<<<<<<<< HEAD:src/component/Header/index.jsx
-
-========
->>>>>>>> main:src/components/Header/index.jsx
 import image from "../../assets/icons/ama.png";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiShoppingCart } from "react-icons/hi";

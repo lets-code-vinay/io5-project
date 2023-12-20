@@ -8,10 +8,14 @@ import phone from "../../assets/image/phone.webp";
 import fulFilled from "../../assets/image/fulfilled.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
+import Header from "../../components/Header";
+import SubHeader from "../../components/SubHeader";
 
 const CartPage = () => {
   return (
     <>
+      <Header />
+      <SubHeader />
       <div className="main-sec">
         <div className="image-sec">
           <div className="head-part">
