@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
-import image from "../../Assest/Icons/ama.png";
+
+import image from "../../assets/icons/ama.png";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiShoppingCart } from "react-icons/hi";
 import { IoSearch } from "react-icons/io5";
@@ -15,7 +16,7 @@ function Header() {
     const res = await axios.get(api);
 
     const { data } = res || [];
-    console.log("data", data);
+    // console.log("data", data);
     setState(data);
   };
   const categories = [
