@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Form from "react-bootstrap/Form";
-// import { useLocation } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Tick from "../../assets/icons/tick.png";
@@ -9,12 +8,8 @@ import phone from "../../assets/image/phone.webp";
 import fulFilled from "../../assets/image/fulfilled.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
-import axios from "axios";
 
 const CartPage = () => {
-
-
-
   return (
     <>
       <div className="main-sec">
@@ -26,47 +21,49 @@ const CartPage = () => {
             <hr />
           </div>
           <div className="main-card">
-                <Card
-                  style={{
-                    padding: "20px",
-                    display: "flex",
-                    flexDirection: "row",
-                  }}
-                >
-                  <div className="min-img">
-                    <Form.Check type="checkbox" id="box" />
-                    <img id="image-1" src={phone} />
+            <Card
+              style={{
+                padding: "20px",
+                display: "flex",
+                flexDirection: "row",
+              }}
+            >
+              <div className="min-img">
+                <Form.Check type="checkbox" id="box" />
+                <img id="image-1" src={phone} />
+              </div>
+              <div className="min-detail">
+                <Card.Body>
+                  <div className="price-title-sec">
+                    <Card.Title>
+                      <p>
+                        realme narzo N53 (Feather Black, 8GB+128GB) 33W Segment
+                        Fastest Charging | Slimmest Phone in Segment | 90 Hz
+                        Smooth Displayrealme narzo N53 (Feather Black,
+                        8GB+128GB) 33W Segment Fastest Charging |
+                      </p>
+                    </Card.Title>
+                    <p className="rupees">
+                      <b>&#8377;18,998</b>
+                    </p>
                   </div>
-                  <div className="min-detail">
-                    <Card.Body>
-                      <div className="price-title-sec">
-                        <Card.Title>
-                          <p>
-                            realme narzo N53 (Feather Black, 8GB+128GB) 33W
-                            Segment Fastest Charging | Slimmest Phone in Segment
-                            | 90 Hz Smooth Displayrealme narzo N53 (Feather
-                            Black, 8GB+128GB) 33W Segment Fastest Charging |
-                          </p>
-                        </Card.Title>
-                        <p className="rupees"><b>&#8377;18,998</b></p>
-                      </div>
-                      <div className="list">
-                        <h4>In stock</h4>
-                        <p className="ship">Eligible for FREE Shipping</p>
-                        <img className="full" src={fulFilled} alt="fulfilled" />
-                        <Form.Check
-                          type="checkbox"
-                          label="This Will be a gift Learn more"
-                        />
-                      </div>
-                      {/* <div className="button-cont">
+                  <div className="list">
+                    <h4>In stock</h4>
+                    <p className="ship">Eligible for FREE Shipping</p>
+                    <img className="full" src={fulFilled} alt="fulfilled" />
+                    <Form.Check
+                      type="checkbox"
+                      label="This Will be a gift Learn more"
+                    />
+                  </div>
+                  {/* <div className="button-cont">
                         <Button variant="success">Add </Button>
                         <Button variant="danger">Remove </Button>
                       </div> */}
-                    </Card.Body>
-                  </div>
-                </Card>
+                </Card.Body>
               </div>
+            </Card>
+          </div>
         </div>
         <div className="payment-sec">
           <div className="first-sec">
@@ -108,7 +105,6 @@ const CartPage = () => {
               </Accordion.Item>
             </Accordion>
           </div>
-          
         </div>
       </div>
       <div className="small-sec">
