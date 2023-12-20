@@ -34,7 +34,7 @@ const CartPage = () => {
             >
               <div className="min-img">
                 <Form.Check type="checkbox" id="box" />
-                <img id="image-1" src={phone} />
+                <img id="image-1" src={phone} alt="phone" />
               </div>
               <div className="min-detail">
                 <Card.Body>
