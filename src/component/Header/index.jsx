@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
+<<<<<<<< HEAD:src/component/Header/index.jsx
+
+========
+>>>>>>>> main:src/components/Header/index.jsx
 import image from "../../assets/icons/ama.png";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiShoppingCart } from "react-icons/hi";
@@ -46,7 +50,7 @@ function Header() {
         <img className="img-cont" src={image} alt="image" />
         <div className="cont">
           <HiOutlineLocationMarker className="location-icon " />
-          <p className="text2">Delivered to Ludhiana 141203 </p>
+          <p className="text">Delivered to Ludhiana 141203 </p>
           <p className="update-name">Update Location</p>
         </div>
         <div style={{ display: "flex", width: "67%" }}>
@@ -87,7 +91,7 @@ function Header() {
         </p>
         <div className="cart-cont">
           <HiShoppingCart className="cart" />
-          <h4 style={{ fontSize: "21px", marginTop: "24%" }}>Cart</h4>
+          <h4>Cart</h4>
         </div>
       </div>
     </React.Fragment>
