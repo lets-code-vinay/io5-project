@@ -3,7 +3,7 @@ import "./App.css";
 import SubHeader from "./components/SubHeader";
 import Header from "./components/Header";
 // import Login from "../src/components/Login/index.jsx";
-import Signup from "./components/signup/index.jsx";
+import SignUp from "./components/SignUp/index.jsx";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Header />
       <SubHeader />
       {/* <Login />; */}
-      <Signup />
+      <SignUp />
     </React.Fragment>
   );
 }

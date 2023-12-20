@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style.css"; // You can create a separate CSS file for styling
 // import image from "../../assets/icons/logo1.png";
 
-const Signup = () => {
+const SignUp = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -84,4 +84,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default SignUp;
