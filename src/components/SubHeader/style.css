@@ -1,0 +1,47 @@
+.list {
+  margin: 0;
+  padding: 0.2%;
+  width: 100%;
+  list-style: none;
+  display: flex;
+}
+li {
+  margin-left: 1%;
+}
+li:hover {
+  border: 1px solid white;
+}
+.button {
+  margin-top: 0.3%;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  width: 3%;
+  color: white;
+  display: flex;
+  padding: 0%;
+  border: none;
+  background-color: #232f3e;
+}
+.sub-cont {
+  display: flex;
+  background: #232f3e;
+  height: 5vh;
+  width: 100%;
+  color: white;
+}
+.icon {
+  width: 88%;
+  margin-top: 9.6%;
+}
+.img-container {
+  margin-right: 1%;
+  margin-left: 6%;
+  width: 9%;
+}
+.shopping-cart {
+  width: 25%;
+  display: flex;
+}
+.lName {
+  width: 9%;
+}
