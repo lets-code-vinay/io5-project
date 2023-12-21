@@ -6,8 +6,8 @@ import About from "./Pages/About/About.jsx";
 import Contact from "./Pages/Contact/Contact.jsx";
 import AllProducts from "./Pages/AllProducts/AllProducts.jsx";
 import Login from "../src/components/Login/index.jsx";
-import SignUp from "./Pages/SignUp/index.jsx";
-import CartPage from "./Pages/CartPage/index.jsx";
+import SignUp from "./pages/SignUp/index.jsx";
+import CartPage from "./pages/CartPage/index.jsx";
 
 function App() {
   return (
