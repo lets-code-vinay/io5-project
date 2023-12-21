@@ -1,0 +1,18 @@
+.based {
+  background-color: #fff;
+  color: #000;
+  position: relative;
+  z-index: 2;
+  padding: 5px;
+  font-family: 600;
+}
+
+.Sponsored-btn{
+    background-color: #fff;
+    color: #5666A4;
+    border: none;
+}
+.Sponsored-btn:hover{
+    background-color: #fff;
+    color: #5666A4;
+}

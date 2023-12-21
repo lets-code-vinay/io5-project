@@ -1,0 +1,55 @@
+.check-box {
+  position: absolute;
+}
+.check-box-2 {
+  position: relative;
+  left: -48%;
+}
+.hlo {
+  position: relative;
+  margin-top: -2%;
+  left: 5%;
+}
+.hlo-2 {
+  position: relative;
+  margin-top: -5%;
+  left: 5%;
+}
+.hlo:hover,
+.hlo-2:hover {
+  color: #7c5959;
+}
+.category {
+  line-height: 0%;
+}
+.category:hover {
+  color: #7c5959;
+}
+#cate {
+  margin-left: -1%;
+  margin-top: 0%;
+}
+li {
+  list-style: none;
+}
+#review {
+  margin-top: 7%;
+}
+.star {
+  display: flex;
+  font-size: medium;
+}
+#range {
+  width: 100%;
+}
+#range:hover {
+  background-color: blue;
+}
+#range-go {
+  display: flex;
+  justify-content: flex-end;
+}
+#dis {
+  line-height: 30px;
+  font-size: 18px;  
+}
