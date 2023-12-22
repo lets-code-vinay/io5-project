@@ -7,6 +7,7 @@ import { FaTrophy } from "react-icons/fa";
 import Sidebar from "../../components/Sidebar";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import Dummy from "../../assets/images/dummy.jfif";
+
 import { FaCcApplePay } from "react-icons/fa";
 import axios from "axios";
 // import StarRating from "react-bootstrap-star-rating";
@@ -16,6 +17,7 @@ function ProductDetail() {
   const [dataDetail, setDataDetail] = useState({});
   const [isLoading, setLoading] = useState(false);
   const [mainImage, setMainImage] = useState(Dummy);
+
   useEffect(() => {
     getData();
   }, []);
@@ -228,7 +230,7 @@ function ProductDetail() {
         </div>
         <div className="section-3">
           <div style={{ display: "flex" }}>
-            <h6 className="w-exchange">With Exchange</h6>
+            <h6 className="w-exchange1">With Exchange</h6>
             <input type="radio" />
           </div>
           <p className="off">Up To Rs.400 off</p>
@@ -271,8 +273,19 @@ function ProductDetail() {
               SamsungCare+ Screen Damage Protection - 1 Year for ₹999.00
             </p>
           </div>
-
-          <hr />
+          {/* {quantity.map((quanty) => {
+            return <option>{quanty}</option>;
+          })} */}
+          <div style={{ display: "flex", marginTop: "4%" }}>
+            <h6>Quantity:</h6>
+            <select>
+              <option>1</option>
+              <option>2</option> <option>3</option>
+              <option>4</option> <option>5</option>
+            </select>
+          </div>
+          <button className="btn-1">Add to Cart</button>
+          <button className="btn-1">But Now</button>
         </div>
       </div>
     </>

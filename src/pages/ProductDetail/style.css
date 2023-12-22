@@ -59,7 +59,7 @@ Track ::-webkit-scrollbar-track {
   text-decoration: none;
 }
 .a:hover {
-  color: red;
+  color: #d93737;
   text-decoration: underline;
 }
 .section-2 {
@@ -73,9 +73,9 @@ Track ::-webkit-scrollbar-track {
 .sec-cont-1 {
   margin-bottom: 0;
   margin-right: 3%;
-  /* margin: 0; */
+
   font-size: 26px;
-  color: red;
+  color: #d93737;
 }
 .sec-cont-2 {
   font-size: 26px;
@@ -148,9 +148,8 @@ Track ::-webkit-scrollbar-track {
   width: 77%;
 }
 .section-3 {
-  border: 1px solid black;
   width: 15%;
-  padding: 1%;
+
   padding-right: 0.5%;
   height: 80vh;
 }
@@ -158,6 +157,12 @@ Track ::-webkit-scrollbar-track {
   font-size: 14px;
   margin-bottom: 0;
   margin-right: 32%;
+  font-weight: bold;
+}
+.w-exchange1 {
+  font-size: 14px;
+  margin-bottom: 0;
+  margin-right: 41%;
   font-weight: bold;
 }
 .input {
@@ -175,15 +180,37 @@ Track ::-webkit-scrollbar-track {
   font-size: 13.5px;
   line-height: 27px;
   font-weight: 600;
+  cursor: pointer;
   color: #0887bb;
+}
+.checkbox:hover {
+  color: #d93737;
+  text-decoration: underline;
 }
 .del {
   color: #0887bb;
   font-size: 14px;
+}
+.del:hover {
+  color: #d93737;
 }
 .stock {
   font-size: 14px;
 }
 .stock1 {
   color: #0887bb;
+  cursor: pointer;
+}
+.stock1:hover {
+  color: #d93737;
+  text-decoration: underline;
+}
+.btn-1 {
+  border-radius: 19px;
+  margin-left: 3%;
+  width: 92%;
+  height: 5vh;
+  color: black;
+  margin-top: 5%;
+  padding: 3%;
 }
