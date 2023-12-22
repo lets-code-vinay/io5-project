@@ -7,11 +7,10 @@ import { IoMdStarOutline } from "react-icons/io";
 import WordI from "../../assets/icons/i-icon.png";
 import { FaStar } from "react-icons/fa6";
 import "./style.css";
-import Button from 'react-bootstrap/Button';
+import Button from "react-bootstrap/Button";
 import Tooltips from "../../components/Tooltips";
 import Filters from "../../components/Filters/filter.jsx";
 import axios from "axios";
-
 
 function AllProducts() {
   const [allData, setAllData] = useState([]);
@@ -56,7 +55,11 @@ function AllProducts() {
             return (
               <div className="imgs-texts" key={index}>
                 <div>
-                  <img id="photo-sec" src={products?.thumbnail} alt="thumbnail" />
+                  <img
+                    id="photo-sec"
+                    src={products?.thumbnail}
+                    alt="thumbnail"
+                  />
                 </div>
                 <div className="lines-list">
                   <div className="icon-tools">
@@ -94,8 +97,8 @@ function AllProducts() {
                   <div className="delivery">
                     <p>FREE delivery</p>
                   </div>
-                  <div id="add">
-                    <Button variant="waring">Add to cart</Button>
+                  <div>
+                    <button id="add">Add to cart</button>
                   </div>
                 </div>
               </div>

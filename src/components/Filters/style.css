@@ -46,10 +46,24 @@ li {
   background-color: blue;
 }
 #range-go {
-  display: flex;
-  justify-content: flex-end;
+  /* display: flex;
+  justify-content: flex-end; */
 }
 #dis {
   line-height: 30px;
-  font-size: 18px;  
+  font-size: 18px;
+}
+
+#show{
+  background-color: #FFD814;
+  border-radius: 33px;
+  align-items: center;
+  border: 1px solid;
+  width: 120px;
+  color: #000;
+
+}
+#show:hover{
+  background-color: #a1d201;
+  border: 1px solid;
 }

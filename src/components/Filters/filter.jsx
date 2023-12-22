@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import Form from "react-bootstrap/Form";
 import "./style.css";
 import { IoStar } from "react-icons/io5";
+import { FaArrowsUpDown } from "react-icons/fa6";
+import { IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDropdownCircle } from "react-icons/io";
 import Accordion from "react-bootstrap/Accordion";
-import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const Filters = (props) => {
-  const nav = useNavigate();
+const Filters = () => {
+  const [show, setShow] = useState(true);
   const [allFilter, setAllFilter] = useState([]);
   useEffect(() => {
     handleFilters();
@@ -25,8 +27,8 @@ const Filters = (props) => {
       console.log("facing the problem in Api", err);
     }
   };
-  const go = () => {
-    nav("/all-products");
+  const clickChange = () => {
+    setShow(!show);
   };
   return (
     <>
@@ -116,19 +118,30 @@ const Filters = (props) => {
         </div>
         <div>
           <h4>Brand</h4>
-          {allFilter?.map((products, index) => {
-            return (
-              <div className="brand-name" key={index}>
-                <input className="check-box-3" type="checkbox" />
-                <label className="hlo-2">{products?.title}</label>
-              </div>
-            );
-          })}
+          <button id="show" onClick={clickChange}>
+            {show ? "Less" : "More"}
+
+            {<FaArrowsUpDown /> ? (
+              <IoIosArrowUp />
+            ) : (
+              <IoIosArrowDropdownCircle />
+            )}
+          </button>
+          {show
+            ? allFilter?.map((products, index) => {
+                return (
+                  <div className="brand-name" key={index}>
+                    <input className="check-box-3" type="checkbox" />
+                    <label className="hlo-2">{products?.title}</label>
+                  </div>
+                );
+              })
+            : null}
         </div>
         <div id="range-go">
           <input type="range" id="range" />
-          <button onChange={go}>Go</button>
         </div>
+      
         <div>
           <p>
             {" "}

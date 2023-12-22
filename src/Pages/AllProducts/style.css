@@ -1,5 +1,5 @@
 .all-part {
-  background-color: red;
+height: 210vh;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(5, 1fr);
@@ -81,9 +81,12 @@
   background-color: #FFD814;
   border-radius: 33px;
   align-items: center;
+  border: 1px solid;
   width: 120px;
+  color: #000;
 
 }
 #add:hover{
-  background-color: #FFD814;
+  background-color: #d7ed10;
+  border: 1px solid;
 }
