@@ -6,6 +6,7 @@ import Sidebar from "../../components/Sidebar/index.jsx";
 import SubSideBar from "../../components/Sidebar/SubSideBar/index.jsx";
 import Carousel from "../../components/Carousel/index.jsx";
 import ProductList from "../../components/ProductList/index.jsx";
+import ProductView from "../../components/ProductView/index.jsx";
 function HomePage() {
   return (
     <React.Fragment>
@@ -14,6 +15,7 @@ function HomePage() {
       <Sidebar />
       <SubSideBar />
       <Carousel />
+      <ProductView />
       <ProductList />
     </React.Fragment>
   );

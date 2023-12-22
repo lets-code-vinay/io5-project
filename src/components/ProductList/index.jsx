@@ -1,18 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
-// import { useNavigate } from "react-router-dom";
-import dummy from "../../assets/image/dammy.jpg";
+import dummy from "../../assets/image/dummy.jpg";
 import axios from "axios";
 
 const ProductList = () => {
   const [productData, setProductData] = useState([]);
-
-  /**
-   * @description Fetching data from API related to phone
-   */
   useEffect(() => {
     const api = `https://dummyjson.com/products`;
-
     try {
       axios.get(api).then((response) => {
         const { data: { products } = {} } = response || {};
@@ -23,7 +17,10 @@ const ProductList = () => {
         }
       });
     } catch (err) {
-      console.error("There are some issues in fetching homepage api", err);
+      console.error(
+        "There are some issues in fetching homepage product api",
+        err
+      );
     }
   }, []);
 
@@ -36,17 +33,23 @@ const ProductList = () => {
         <div className="child">
           {productData.map((product, index) => {
             return (
-              <div
-                className="product-border"
-                key={index}
-                onClick={(e) => (e, product)}
-              >
-                <img
-                  className="pro-image"
-                  src={product?.thumbnail ? product?.thumbnail : dummy}
-                  alt="pro-image"
-                />
-                <p className="title">{product?.title}</p>
+              <div>
+                <div>
+                  <p className="deal">Today's Deals</p>
+                </div>
+                <div
+                  className="product-border"
+                  key={index}
+                  onClick={(e) => (e, product)}
+                >
+                  <img
+                    className="pro-image"
+                    src={product?.thumbnail ? product?.thumbnail : dummy}
+                    alt="pro-image"
+                  />
+                  <p className="title">{product?.title}</p>
+                  <p className="deal-of-the-day">{product?.description}</p>
+                </div>
               </div>
             );
           })}

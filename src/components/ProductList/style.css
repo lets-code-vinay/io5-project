@@ -35,4 +35,15 @@
 .main-product-container .title {
   text-align: center;
   margin: 5px auto;
+  background-color: none;
+}
+
+.deal {
+  margin-left: 10px;
+}
+.deal-of-the-day {
+  display: flex;
+  flex-direction: row;
+  min-width: 200px;
+  max-width: 200px;
 }
