@@ -35,6 +35,7 @@ function SubHeader() {
           <li>Shopping made easy download the app</li>
         </ul>
       </div>
+
       <Sidebar
         show={show}
         setShow={setShow}
