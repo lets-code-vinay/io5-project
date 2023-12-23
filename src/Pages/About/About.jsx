@@ -4,6 +4,8 @@ import SubHeader from "../../components/SubHeader";
 // import Sidebar from "../../components/Sidebar/index";
 // import Sidebar from "../../components/sidebar/SubSideBar/index";
 import SideBar from "../../components/SideBar/index";
+import Footer from "../../components/Footer";
+
 function About() {
   return (
     <React.Fragment>
@@ -11,6 +13,7 @@ function About() {
       <SubHeader />
       <SideBar />
       <h1>About page testing</h1>
+      <Footer />
     </React.Fragment>
   );
 }
