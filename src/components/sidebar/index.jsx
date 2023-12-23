@@ -5,9 +5,10 @@ import SubSideBar from "./SubSideBar";
 import { RxCaretRight } from "react-icons/rx";
 import { IoIosContact } from "react-icons/io";
 
-function Sidebar(props) {
-  const { handleClose, show } = props;
+function SideBar(props) {
+  const { handleClose, show, back } = props;
   const [isShowMore, setShowMore] = useState(false);
+  const [isMore, setMore] = useState(false);
   const [isMenu, setMenu] = useState(false);
   const handleMenu = () => {
     setMenu(true);
@@ -17,6 +18,12 @@ function Sidebar(props) {
   };
   const toggle = () => {
     setShowMore(!isShowMore);
+  };
+  const toggle1 = () => {
+    setMore(!isMore);
+  };
+  const handleStatement = (li) => {
+    console.log("clicked", handleStatement, li);
   };
   return (
     <>
@@ -38,23 +45,23 @@ function Sidebar(props) {
             Digital Content And Devices
           </h4>
           <ul className="list-container">
-            <li className="list-name">
-              Echo & Alexa{" "}
-              <RxCaretRight onClick={handleMenu} className="icons" />
+            <li className="list-name" onClicked={handleStatement}>
+              Echo & Alexa
+              <RxCaretRight className="icons" />
             </li>
-            <li className="list-name">
+            <li className="list-name" onClick={handleStatement}>
               Fire TV <RxCaretRight className="icons" />
             </li>
-            <li className="list-name">
+            <li className="list-name" onClick={handleStatement}>
               Kindle E-Readers & eBooks <RxCaretRight className="icons" />
             </li>
-            <li className="list-name">
+            <li className="list-name" onClick={handleStatement}>
               Audible Audiobooks <RxCaretRight className="icons" />
             </li>
-            <li className="list-name">
+            <li className="list-name" onClick={handleStatement}>
               Amazon Prime Video <RxCaretRight className="icons" />
             </li>
-            <li className="list-name">
+            <li className="list-name" onClick={handleStatement}>
               Amazon Prime Music <RxCaretRight className="icons" />
             </li>
           </ul>
@@ -116,13 +123,14 @@ function Sidebar(props) {
           </h4>
           <ul className="list-container">
             <li className="list-name">Amazon Pay</li>
-            <li className="list-name">
-              Gift Card & Recharge <RxCaretRight className="icons" />
+            <li className="list-name" onClick={handleMenu}>
+              Gift Card & Recharge{" "}
+              <RxCaretRight className="icons" onClick={handleMenu} />
             </li>
             <li className="list-name">Amazon Launchpad</li>
             <li className="list-name">Handloom & Handcraft</li>
           </ul>
-          {isShowMore && (
+          {isMore && (
             <ul className="list-container">
               <li className="list-name">Flight Control</li>
               <li className="list-name">Local Shops on Amazon</li>
@@ -130,8 +138,8 @@ function Sidebar(props) {
               <li className="list-name">Clearness & Store</li>
             </ul>
           )}
-          <button onClick={toggle} className="Button">
-            {isShowMore ? `See Less ` : `See More`}
+          <button onClick={toggle1} className="Button">
+            {isMore ? `See Less ` : `See More`}
           </button>
           <h4 style={{ color: "#232F3E", fontWeight: "bold" }}>
             Help & Support
@@ -153,4 +161,4 @@ function Sidebar(props) {
   );
 }
 
-export default Sidebar;
+export default SideBar;

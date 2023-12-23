@@ -1,0 +1,16 @@
+.main-sect {
+  padding: 2%;
+}
+.sub-icon {
+  margin-left: 7%;
+  margin-right: 3%;
+  margin-top: 1%;
+}
+
+.menu {
+  margin-top: 3%;
+  display: flex;
+}
+.menu:hover {
+  background-color: beige;
+}
