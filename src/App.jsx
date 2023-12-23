@@ -1,14 +1,14 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Login from "./components/Login";
-import HomePage from "./pages/HomePage/HomePage";
-import CartPage from "./pages/CartPage";
-import ProductDetail from "./pages/ProductDetail/product";
-import About from "./pages/About/About";
-import Contact from "./pages/Contact/Contact";
-import AllProducts from "./pages/AllProducts/AllProducts";
 import SignUp from "./pages/SignUp";
+import Login from "./pages/Login";
+import HomePage from "./pages/HomePage";
+import CartPage from "./pages/CartPage";
+import ProductDetail from "./pages/ProductDetail";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import AllProducts from "./pages/AllProducts";
 
 function App() {
   return (
@@ -21,7 +21,6 @@ function App() {
           <Route path="/cart" element={<CartPage />} />
           <Route path="/product-detail" element={<ProductDetail />} />
           <Route path="/home-page" element={<HomePage />} />
-          <Route path="/cart" element={<CartPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/all-products" element={<AllProducts />} />
