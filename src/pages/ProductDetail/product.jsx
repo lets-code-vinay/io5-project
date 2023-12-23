@@ -10,7 +10,6 @@ import Dummy from "../../assets/images/dummy.jfif";
 
 import { FaCcApplePay } from "react-icons/fa";
 import axios from "axios";
-// import StarRating from "react-bootstrap-star-rating";
 import Loader from "../../components/Loader/loader";
 import ReactImageMagnify from "react-image-magnify";
 function ProductDetail() {

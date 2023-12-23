@@ -11,17 +11,18 @@
 }
 
 .small-img {
+  margin-right: 0%;
   height: 32.5vh;
   display: flex;
   flex-direction: column;
-  width: 14%;
+  width: 20%;
   overflow-y: scroll;
 }
 .images {
   /* box-shadow: 2px 2px 6px 2px black; */
   border: 1px solid black;
-  border-radius: 14px;
-  height: 62px;
+  border-radius: 7px;
+  height: 62px px;
   min-height: 62px;
   max-height: 62px;
   margin-top: 5%;
