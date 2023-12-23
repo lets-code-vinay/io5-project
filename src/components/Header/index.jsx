@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
-import image from "../../assets/icons/ama.png";
+import image from "../../assets/icons/amazon.png";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiShoppingCart } from "react-icons/hi";
 import { IoSearch } from "react-icons/io5";
@@ -43,7 +43,7 @@ function Header() {
   return (
     <React.Fragment>
       <div className="nav-1">
-        <img className="img-cont" src={image} alt="image" />
+        <img className="img-cont" src={image} alt="ama" />
         <div className="cont">
           <HiOutlineLocationMarker className="location-icon " />
           <p className="text2">Delivered to Ludhiana 141203 </p>

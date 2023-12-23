@@ -3,3 +3,8 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.large-img img {
+  border-radius: 10px;
+  height: 450px !important;
+}
