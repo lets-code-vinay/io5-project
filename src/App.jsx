@@ -8,7 +8,7 @@ import Contact from "./Pages/Contact/Contact.jsx";
 import AllProducts from "./Pages/AllProducts/AllProducts.jsx";
 import Login from "./components/Login/index.jsx";
 import CartPage from "./Pages/CartPage/index.jsx";
-import ProductDetail from "./pages/ProductDetail/product.jsx";
+import ProductDetail from "./Pages/ProductDetail/index.jsx";
 
 function App() {
   return (
