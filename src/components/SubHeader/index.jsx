@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import { FaBars } from "react-icons/fa";
 import img from "../../assets/icons/shopping icon.png";
-import Sidebar from "../Sidebar";
+import SideBar from "../SideBar";
 
 function SubHeader() {
   const [show, setShow] = useState(false);
@@ -35,7 +35,7 @@ function SubHeader() {
           <li>Shopping made easy download the app</li>
         </ul>
       </div>
-      <Sidebar
+      <SideBar
         show={show}
         setShow={setShow}
         handleShow={handleShow}
