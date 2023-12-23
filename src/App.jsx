@@ -8,6 +8,8 @@ import Contact from "./Pages/Contact/Contact.jsx";
 import AllProducts from "./Pages/AllProducts/AllProducts.jsx";
 import Login from "./components/Login/index.jsx";
 import CartPage from "./Pages/CartPage/index.jsx";
+import ProductDetail from "./pages/ProductDetail/product.jsx";
+
 function App() {
   return (
     <div className="main-page">
@@ -17,8 +19,9 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/cart" element={<CartPage />} />
+          <Route path="/product-detail" element={<ProductDetail />} />
           <Route path="/home-page" element={<HomePage />} />
-          <Route path="/" element={<HomePage />} />
+          <Route path="/cart" element={<CartPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/all-products" element={<AllProducts />} />
