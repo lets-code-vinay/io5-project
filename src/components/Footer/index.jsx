@@ -1,5 +1,5 @@
-import "./Footer.css";
-import logo from "../src/assets/ama-removebg-preview (1).png";
+import "./style.css";
+import logo from "../../assets/amazon-logo-1.png";
 
 function Footer() {
   return (
