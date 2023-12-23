@@ -8,7 +8,7 @@ function About() {
       <Header />
       <SubHeader />
       <Sidebar />
-      <h1>About page</h1>
+      <h1>About page testing</h1>
     </React.Fragment>
   );
 }
