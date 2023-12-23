@@ -5,7 +5,7 @@ import HomePage from "./pages/HomePage/HomePage.jsx";
 import About from "./pages/About/About.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import AllProducts from "./pages/AllProducts/AllProducts.jsx";
-
+import ProductDetail from "./pages/ProductDetail/product.jsx";
 import Login from "../src/components/Login/index.jsx";
 import SignUp from "./pages/SignUp/index.jsx";
 import CartPage from "./pages/CartPage/index.jsx";
@@ -18,6 +18,8 @@ function App() {
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<HomePage />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/product-detail" element={<ProductDetail />} />
           <Route path="/home-page" element={<HomePage />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/about" element={<About />} />
