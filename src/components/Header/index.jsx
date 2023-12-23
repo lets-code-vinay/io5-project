@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
-import image from "../../assets/icons/ama.png";
+import image from "../../assets/icons/amazon.png";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiShoppingCart } from "react-icons/hi";
 import { IoSearch } from "react-icons/io5";

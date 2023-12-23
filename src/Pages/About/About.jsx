@@ -10,7 +10,7 @@ function About() {
       <Header />
       <SubHeader />
       <SideBar />
-      <h1>About page</h1>
+      <h1>About page testing</h1>
     </React.Fragment>
   );
 }
