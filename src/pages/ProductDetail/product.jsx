@@ -4,7 +4,7 @@ import { CiDeliveryTruck } from "react-icons/ci";
 import Header from "../../components/Header";
 import SubHeader from "../../components/SubHeader";
 import { FaTrophy } from "react-icons/fa";
-import Sidebar from "../../components/Sidebar";
+import SideBar from "../../components/SideBar";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import Dummy from "../../assets/images/dummy.jfif";
 
@@ -58,7 +58,7 @@ function ProductDetail() {
     <>
       <Header />
       <SubHeader />
-      <Sidebar />
+      <SideBar />
       <div className="main-cont">
         <div className="section-1">
           <div className="small-img">
