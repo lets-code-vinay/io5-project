@@ -5,7 +5,7 @@ import SubSideBar from "./SubSideBar";
 import { RxCaretRight } from "react-icons/rx";
 import { IoIosContact } from "react-icons/io";
 
-function Sidebar(props) {
+function SideBar(props) {
   const { handleClose, show, back } = props;
   const [isShowMore, setShowMore] = useState(false);
   const [isMore, setMore] = useState(false);
@@ -161,4 +161,4 @@ function Sidebar(props) {
   );
 }
 
-export default Sidebar;
+export default SideBar;

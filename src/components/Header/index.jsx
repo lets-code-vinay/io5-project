@@ -43,7 +43,7 @@ function Header() {
   return (
     <React.Fragment>
       <div className="nav-1">
-        <img className="img-cont" src={image} alt="image" />
+        <img className="img-cont" src={image} alt="ama" />
         <div className="cont">
           <HiOutlineLocationMarker className="location-icon " />
           <p className="text2">Delivered to Ludhiana 141203 </p>

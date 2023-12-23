@@ -34,7 +34,7 @@ const CartPage = () => {
             >
               <div className="min-img">
                 <Form.Check type="checkbox" id="box" />
-                <img id="image-1" src={phone} />
+                <img id="image-1" src={phone} alt="phone" />
               </div>
               <div className="min-detail">
                 <Card.Body>
@@ -98,7 +98,7 @@ const CartPage = () => {
               <Form.Check type="checkbox" label="This order contains a gift" />
             </Form.Group>
             <Button className="btn-buy">Proceed to Buy</Button>
-            <Accordion defaultActiveKey="0" className="accordion">
+            <Accordion defaultActiveKey="0" id="accordion">
               <Accordion.Item eventKey="0">
                 <Accordion.Header>EMI Available</Accordion.Header>
                 <Accordion.Body>
