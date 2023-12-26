@@ -5,10 +5,10 @@ import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
 import HomePage from "./pages/HomePage";
 import CartPage from "./pages/CartPage";
-import ProductDetail from "./pages/ProductDetail";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import AllProducts from "./pages/AllProducts";
+import ProductDetail from "./pages/ProductDetail/index.jsx";
 
 function App() {
   return (

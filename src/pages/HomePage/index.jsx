@@ -17,6 +17,8 @@ function HomePage() {
       <Carousel />
       <ProductView />
       <ProductList />
+      <ProductView />
+      <ProductList />
     </React.Fragment>
   );
 }
